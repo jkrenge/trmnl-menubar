@@ -92,7 +92,7 @@ struct ContentView: View {
                         draft = ""
                         editingKey = false
                     }
-                Text("In TRMNL: Devices → your device → API Key. Press Return to save. Stored in your macOS Keychain.")
+                Text("In TRMNL: [Devices](https://trmnl.com/devices) → your device → API Key. Press Return to save. Stored in your macOS Keychain.")
                     .font(.caption)
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
