@@ -1,4 +1,4 @@
-# TRMNL for the menu bar
+# Menu Bar Viewer for TRMNL
 
 A small macOS menu bar app that shows the screen your [TRMNL](https://trmnl.com) e-ink device is currently displaying. Click the icon and the current screen unfolds below it.
 
@@ -31,7 +31,7 @@ cd trmnl-menubar && make install
 ```
 
 ```bash
-open /Applications/TRMNL.app
+open "/Applications/Menu Bar Viewer for TRMNL.app"
 ```
 
 Click the icon in the menu bar and paste your device API key. You find it in TRMNL under [Devices](https://trmnl.com/devices) → your device → API Key.
@@ -70,7 +70,7 @@ INSTALLER_IDENTITY = 3rd Party Mac Developer Installer: Your Name (YOURTEAMID)
 PROFILE = /path/to/Mac_App_Store.provisionprofile
 ```
 
-Create both certificates in Xcode under Settings → Accounts → Manage Certificates, register the bundle ID and download a Mac App Store provisioning profile at [developer.apple.com](https://developer.apple.com/account/resources), then upload `build/TRMNL.pkg` with the Transporter app. If you publish your own build, change `BUNDLE_ID` in the Makefile and `CFBundleIdentifier` in [Info.plist](Info.plist) first.
+Create both certificates in Xcode under Settings → Accounts → Manage Certificates, register the bundle ID and download a Mac App Store provisioning profile at [developer.apple.com](https://developer.apple.com/account/resources), then upload `build/MenuBarViewerForTRMNL.pkg` with the Transporter app. If you publish your own build, change `BUNDLE_ID` in the Makefile and `CFBundleIdentifier` in [Info.plist](Info.plist) first.
 
 ## Privacy
 

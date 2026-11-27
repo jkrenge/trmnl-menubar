@@ -1,4 +1,4 @@
-TRMNL.app/
+*.app/
 build/
 local.mk
 *.provisionprofile

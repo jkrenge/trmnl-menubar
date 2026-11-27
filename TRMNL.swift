@@ -259,7 +259,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         let name = UserDefaults.standard.string(forKey: "menuBarIcon") ?? "photo.artframe"
         // Fallback keeps the icon clickable if a saved symbol ever stops existing.
         item.button?.image = NSImage(systemSymbolName: isSymbol(name) ? name : "photo.artframe",
-                                     accessibilityDescription: "TRMNL")
+                                     accessibilityDescription: "Menu Bar Viewer for TRMNL")
     }
 }
 
