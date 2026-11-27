@@ -112,7 +112,7 @@ struct ContentView: View {
                 Spacer()
                 Group {
                     Button("Refresh", systemImage: "arrow.clockwise") { Task { await model.refresh() } }
-                    Button("Change API key", systemImage: "key") { editingKey.toggle() }
+                    Button("Change API key", systemImage: "lock.circle") { editingKey.toggle() }
                     Button("Quit", systemImage: "power") { NSApp.terminate(nil) }
                 }
                 .labelStyle(.iconOnly)
@@ -140,7 +140,7 @@ struct TRMNLApp: App {
     }
 
     var body: some Scene {
-        MenuBarExtra("TRMNL", systemImage: "display") {
+        MenuBarExtra("TRMNL", systemImage: "photo.artframe") {
             ContentView(model: model)
         }
         .menuBarExtraStyle(.window)
