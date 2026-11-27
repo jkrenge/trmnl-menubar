@@ -1,2 +1,5 @@
 TRMNL.app/
+build/
+local.mk
+*.provisionprofile
 .DS_Store
